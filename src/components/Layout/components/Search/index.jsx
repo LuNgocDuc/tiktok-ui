@@ -12,6 +12,7 @@ import { useDebounce } from '~/hooks';
 import styles from './Search.module.scss';
 
 const cx = classNames.bind(styles);
+
 function Search() {
     const [searchValue, setSearchValue] = useState('');
     const [searchResult, setSearchResult] = useState([]);
@@ -19,21 +20,18 @@ function Search() {
     const [loading, setLoading] = useState(false);
 
     const debounced = useDebounce(searchValue, 500);
-
     const inputRef = useRef();
 
     useEffect(() => {
-        if (!searchValue.trim()) {
+        if (!debounced.trim()) {
             setSearchResult([]);
             return;
         }
 
         const fetchApi = async () => {
             setLoading(true);
-
             const result = await searchServices.search(debounced);
             setSearchResult(result);
-
             setLoading(false);
         };
 
@@ -80,10 +78,12 @@ function Search() {
                         <FontAwesomeIcon icon={faCircleXmark} />
                     </button>
                 )}
-
                 {loading && <FontAwesomeIcon className={cx('loading')} icon={faSpinner} />}
-
-                <button className={cx('search-btn')}>
+                
+                <button
+                    className={cx('search-btn')}
+                    onMouseDown={(e) => e.preventDefault()}
+                >
                     <SearchIcon />
                 </button>
             </div>

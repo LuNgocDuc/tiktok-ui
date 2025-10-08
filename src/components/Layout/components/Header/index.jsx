@@ -4,6 +4,9 @@ import { faEllipsisVertical } from '@fortawesome/free-solid-svg-icons';
 import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css';
 
+
+import routesConfig from '~/config/routes'
+import { Link } from 'react-router-dom';
 import Button from '~/components/Button';
 import styles from './Header.module.scss';
 import Menu from '~/components/Popper/Menu';
@@ -93,7 +96,9 @@ function Header() {
     return (
         <header className={cx('wrapper')}>
             <div className={cx('inner')}>
-                <svg
+
+                <Link to = {routesConfig.home} className= {cx('logo-link')} >
+                    <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="currentColor"
                     viewBox="0 0 118 42"
@@ -135,6 +140,8 @@ function Header() {
                         d="M91.58 28.887a3.94 3.94 0 0 1-3.94-3.945 3.94 3.94 0 1 1 7.882 0c0 2.18-1.77 3.945-3.942 3.945m0-12.058c-4.477 0-8.106 3.631-8.106 8.113s3.629 8.113 8.106 8.113 8.106-3.631 8.106-8.113-3.628-8.113-8.106-8.113"
                     ></path>
                 </svg>
+
+                </Link>
 
                 <Search />
 
