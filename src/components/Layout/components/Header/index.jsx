@@ -43,6 +43,141 @@ const MENU_ITEMS = [
                     code: 'vi',
                     title: 'Tiếng Việt',
                 },
+                {
+                    type: 'language',
+                    code: 'fi',
+                    title: 'Suomi', // Finland
+                },
+                {
+                    type: 'language',
+                    code: 'no',
+                    title: 'Norsk', // Norway
+                },
+                {
+                    type: 'language',
+                    code: 'se',
+                    title: 'Svenska', // Sweden
+                },
+                {
+                    type: 'language',
+                    code: 'dk',
+                    title: 'Dansk', // Denmark
+                },
+                {
+                    type: 'language',
+                    code: 'ch',
+                    title: 'Schweizerdeutsch', // Switzerland (Swiss German)
+                },
+                {
+                    type: 'language',
+                    code: 'nl',
+                    title: 'Nederlands', // Netherlands
+                },
+                {
+                    type: 'language',
+                    code: 'fr',
+                    title: 'Français', // France
+                },
+                {
+                    type: 'language',
+                    code: 'de',
+                    title: 'Deutsch', // Germany
+                },
+                {
+                    type: 'language',
+                    code: 'es',
+                    title: 'Español', // Spain
+                },
+                {
+                    type: 'language',
+                    code: 'pt',
+                    title: 'Português', // Portugal / Brazil
+                },
+                {
+                    type: 'language',
+                    code: 'it',
+                    title: 'Italiano', // Italy
+                },
+                {
+                    type: 'language',
+                    code: 'pl',
+                    title: 'Polski', // Poland
+                },
+                {
+                    type: 'language',
+                    code: 'ru',
+                    title: 'Russia', // Russia
+                },
+                {
+                    type: 'language',
+                    code: 'ja',
+                    title: 'Japanese', // Japan
+                },
+                {
+                    type: 'language',
+                    code: 'ko',
+                    title: 'Korean', // Korea
+                },
+                {
+                    type: 'language',
+                    code: 'zh',
+                    title: 'Chinese', // China
+                },
+                {
+                    type: 'language',
+                    code: 'th',
+                    title: 'Thailand', // Thailand
+                },
+                {
+                    type: 'language',
+                    code: 'id',
+                    title: 'Bahasa Indonesia', // Indonesia
+                },
+                {
+                    type: 'language',
+                    code: 'ms',
+                    title: 'Bahasa Melayu', // Malaysia
+                },
+                {
+                    type: 'language',
+                    code: 'ar',
+                    title: 'العربية', // Arabic
+                },
+                {
+                    type: 'language',
+                    code: 'hi',
+                    title: 'हिन्दी', // Hindi - India
+                },
+                {
+                    type: 'language',
+                    code: 'tr',
+                    title: 'Türkçe', // Turkey
+                },
+                {
+                    type: 'language',
+                    code: 'gr',
+                    title: 'Ελληνικά', // Greek
+                },
+                {
+                    type: 'language',
+                    code: 'cz',
+                    title: 'Čeština', // Czech Republic
+                },
+                {
+                    type: 'language',
+                    code: 'hu',
+                    title: 'Magyar', // Hungary
+                },
+                {
+                    type: 'language',
+                    code: 'ro',
+                    title: 'Română', // Romania
+                },
+                {
+                    type: 'language',
+                    code: 'ua',
+                    title: 'Українська', // Ukraine
+                },
             ],
         },
     },
