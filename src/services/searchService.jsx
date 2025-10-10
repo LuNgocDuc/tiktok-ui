@@ -1,4 +1,4 @@
-import * as httpRequest from '~/ultis/httpRequest';
+import * as httpRequest from '~/utils/httpRequest';
 
 export const search = async (q, type = 'less') => {
     try {
@@ -8,8 +8,9 @@ export const search = async (q, type = 'less') => {
                 type,
             },
         });
-        return res.data;
+        return Array.isArray(res.data) ? res.data : [];
     } catch (error) {
         console.log(error);
+        return [];
     }
 };
